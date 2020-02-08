@@ -1,6 +1,6 @@
-const createEngineer = require('./createEngineer');
-const createIntern = require('./createIntern');
-const createManager = require('./createManager');
+const genEngineer = require('./genEngineer');
+const genIntern = require('./genIntern');
+const genManager = require('./genManager');
 
 let genEmployee = (inputs) => {
   let htmlArray = [];
