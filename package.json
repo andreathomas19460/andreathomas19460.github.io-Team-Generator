@@ -1,0 +1,24 @@
+{
+  "name": "andreathomas19460.github.io-team-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreathomas19460/andreathomas19460.github.io-Team-Generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreathomas19460/andreathomas19460.github.io-Team-Generator/issues"
+  },
+  "homepage": "https://github.com/andreathomas19460/andreathomas19460.github.io-Team-Generator#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "inquirer": "^7.0.4"
+  },
+  "devDependencies": {}
+}

@@ -1,5 +1,5 @@
 const genEmployee = require('./teamMemberConstructor').genEmployee;
-var fs = require('fs');
+const fs = require('fs');
 
 function genTeamHtml(inputs){
   let  htmlContent = `
@@ -88,7 +88,7 @@ function genTeamHtml(inputs){
   </html>
 `;
 
-  fs.writeFile('./output/team.html', htmlContent, (error) => {});
+  fs.writeFile('./newTeam/index.html', htmlContent, (error) => {"Something went wrong"});
 }
 
 module.exports.genTeamHtml = genTeamHtml

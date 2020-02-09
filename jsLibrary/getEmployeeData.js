@@ -5,16 +5,16 @@ const getManagerData = async () => {
   await inquirer
     .prompt([
       {
-        message:"You are creating a new team first a manager then his team, what is the managers name?",
+        message:"You are creating a new team! What is the manager's name?",
         name:"name",
       },
       {
         name: 'email',
-        message: 'What is the managers email?',
+        message: 'What is their email address?',
       },
       {
         name: 'officeNumber',
-        message: 'What is there managers office number?',
+        message: 'What is their office number?',
       },
     ])
     .then(answers => {
@@ -36,22 +36,22 @@ if(inputs.length === 0){
     {
       type:"list",
       name:"title",
-      message:"You are creating a new Employee What is employees job title within the company?",
+      message:"You are creating a new Employee. What is employee's job title?",
       choices: ["Engineer", "Intern"],
     },
     {
       name: 'name',
-      message: "What is the employees name?",
+      message: "What is the employee's name?",
     },
     {
       name: 'email',
-      message: "What is the employees email?",
+      message: "What is their email?",
     },
     {
       name: 'github',
-      message: "What is the employees github?",
+      message: "GitHub profile?",
       when: function( answers ) {
-        // Only run if user set a position
+       
         if( answers.title == "Engineer" ){
           return !!answers.title;
         }
@@ -59,9 +59,9 @@ if(inputs.length === 0){
     },
     {
       name: 'school',
-      message: "What is the employees school?",
+      message: "School name?",
       when: function( answers ) {
-        // Only run if user set a position
+       
         if( answers.title == "Intern" ){
           return !!answers.title;
         }
@@ -70,7 +70,7 @@ if(inputs.length === 0){
     {
       type: 'confirm',
       name: 'again',
-      message: 'Enter another input? ',
+      message: 'Enter another employee? ',
       default: true
     },
   ];
